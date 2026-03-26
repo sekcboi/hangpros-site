@@ -27,19 +27,14 @@ export default function HangProsWebsite() {
 
   const projects = [
     {
-      title: "Living Room TV Mount",
+      title: "Living Room Install",
       before: "/before-1.jpg",
       after: "/after-1.jpg",
     },
     {
-      title: "Fireplace Install",
+      title: "Fireplace Mount",
       before: "/before-2.jpg",
       after: "/after-2.jpg",
-    },
-    {
-      title: "Office Screen Setup",
-      before: "/before-3.jpg",
-      after: "/after-3.jpg",
     },
   ];
 
@@ -169,31 +164,37 @@ export default function HangProsWebsite() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="max-w-2xl">
             <div className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-600">Our Work</div>
-            <h2 className="mt-3 text-4xl font-black tracking-tight">Before and after transformations</h2>
+            <h2 className="mt-3 text-4xl font-black tracking-tight">Before & After Hanging</h2>
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              Add real photos here to show the difference Hang Pros makes. This section is one of the most important parts of the site.
+              See the difference between a standard setup and a clean, professionally mounted finish.
             </p>
           </div>
 
-          <div className="mt-10 grid gap-8 lg:grid-cols-3">
+          <div className="mt-10 grid gap-8 md:grid-cols-2">
             {projects.map((project) => (
               <div key={project.title} className="rounded-[2rem] border border-orange-100 bg-white p-5 shadow-sm">
                 <h3 className="text-xl font-bold tracking-tight text-slate-900">{project.title}</h3>
-                <div className="mt-4 grid gap-4">
+
+                <div className="mt-4 grid grid-cols-2 gap-3">
                   <div>
-                    <div className="mb-2 text-sm font-semibold uppercase tracking-[0.14em] text-slate-500">Before</div>
+                    <div className="mb-2 text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+                      Before Hanging
+                    </div>
                     <img
                       src={project.before}
                       alt={`${project.title} before`}
-                      className="h-52 w-full rounded-2xl object-cover"
+                      className="h-40 w-full rounded-xl object-cover"
                     />
                   </div>
+
                   <div>
-                    <div className="mb-2 text-sm font-semibold uppercase tracking-[0.14em] text-orange-600">After</div>
+                    <div className="mb-2 text-xs font-semibold uppercase tracking-[0.14em] text-orange-600">
+                      After Hanging
+                    </div>
                     <img
                       src={project.after}
                       alt={`${project.title} after`}
-                      className="h-52 w-full rounded-2xl object-cover"
+                      className="h-40 w-full rounded-xl object-cover border-2 border-orange-400"
                     />
                   </div>
                 </div>
