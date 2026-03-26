@@ -12,13 +12,13 @@ export default function HangProsWebsite() {
   const projects = [
     {
       title: "Living Room Install",
-      before: "/before-1.jpg",
-      after: "/after-1.jpg",
+      before: "/before-1.png",
+      after: "/after-1.png",
     },
     {
       title: "Fireplace Mount",
-      before: "/before-2.jpg",
-      after: "/after-2.jpg",
+      before: "/before-2.png",
+      after: "/after-2.png",
     },
   ];
 
